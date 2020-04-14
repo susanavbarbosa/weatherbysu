@@ -7,6 +7,5 @@ div.card {
   border-color: #596aca;
   border-style: solid;
   border-width: 4px;
-  padding: 10px;
-  margin: 10px;
+  padding: 10px 0px 320px 10px;
 }

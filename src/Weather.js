@@ -33,11 +33,14 @@ export default function Weather(props) {
   let form = (
     <form onSubmit={handleSubmit}>
       <input
+        className="city-search"
         type="Search"
         placeholder="Enter City Name.."
         onChange={updateCity}
       />
-      <button type="Submit">Search</button>
+      <button type="Submit" className="search-button">
+        Search
+      </button>
     </form>
   );
 
@@ -45,20 +48,69 @@ export default function Weather(props) {
     return (
       <div className="card">
         <h2>{form}</h2>
-        <h4>
-          <img src={weather.icon} alt={weather.description} />
-          {Math.round(weather.temperature)}°C | F
-        </h4>
-        <p></p>
+        <h4>Sunday, 15/03/2020, 16h41</h4>
+
+        <div className="result">
+          <p>
+            <img src={weather.icon} alt={weather.description} />
+          </p>
+          {Math.round(weather.temperature)}°C | F<p></p>
+          <span className="cityTbc">{city}</span>
+        </div>
+
+        <h5>Next:</h5>
         <ul>
           <li>Sky: {weather.description}</li>
           <li>Humidity: {weather.humidity}%</li>
           <li>Wind: {weather.wind}km/h</li>
-          <li className="weather-advice">wear sunscreen</li>
+          <li className="weather-advice">*wear sunscreen</li>
         </ul>
+        <hr />
+        <div className="row">
+          <div className="col-3">
+            <div className="nextnamedays">Monday</div>
+            <p className="maxdegrees" id="dailyMaxTem">
+              22ºC
+            </p>
+            <p className="mindegrees" id="dailyMinTem">
+              10ºC
+            </p>
+          </div>
+          <div className="col-3">
+            <div className="nextnamedays">Monday</div>
+            <p className="maxdegrees" id="dailyMaxTem">
+              22ºC
+            </p>
+            <p className="mindegrees" id="dailyMinTem">
+              10ºC
+            </p>
+          </div>
+          <div className="col-3">
+            <div className="nextnamedays">Monday</div>
+            <p className="maxdegrees" id="dailyMaxTem">
+              22ºC
+            </p>
+            <p className="mindegrees" id="dailyMinTem">
+              10ºC
+            </p>
+          </div>
+          <div className="col-3">
+            <div className="nextnamedays">Monday</div>
+            <p className="maxdegrees" id="dailyMaxTem">
+              22ºC
+            </p>
+            <p className="mindegrees" id="dailyMinTem">
+              10ºC
+            </p>
+          </div>
+        </div>
       </div>
     );
   } else {
-    return form;
+    return (
+      <div className="card">
+        <h2>{form}</h2>
+      </div>
+    );
   }
 }
