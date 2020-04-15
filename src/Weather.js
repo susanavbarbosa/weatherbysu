@@ -65,43 +65,46 @@ export default function Weather(props) {
           <li>Wind: {weather.wind}km/h</li>
           <li className="weather-advice">*wear sunscreen</li>
         </ul>
-        <hr />
-        <div className="row">
-          <div className="col-3">
-            <div className="nextnamedays">Monday</div>
-            <p className="maxdegrees" id="dailyMaxTem">
-              22ºC
-            </p>
-            <p className="mindegrees" id="dailyMinTem">
-              10ºC
-            </p>
-          </div>
-          <div className="col-3">
-            <div className="nextnamedays">Monday</div>
-            <p className="maxdegrees" id="dailyMaxTem">
-              22ºC
-            </p>
-            <p className="mindegrees" id="dailyMinTem">
-              10ºC
-            </p>
-          </div>
-          <div className="col-3">
-            <div className="nextnamedays">Monday</div>
-            <p className="maxdegrees" id="dailyMaxTem">
-              22ºC
-            </p>
-            <p className="mindegrees" id="dailyMinTem">
-              10ºC
-            </p>
-          </div>
-          <div className="col-3">
-            <div className="nextnamedays">Monday</div>
-            <p className="maxdegrees" id="dailyMaxTem">
-              22ºC
-            </p>
-            <p className="mindegrees" id="dailyMinTem">
-              10ºC
-            </p>
+        <div>
+          <div class="container">
+            <div className="row">
+              <div class="col-sm">
+                <div className="nextnamedays">Monday</div>
+                <p className="maxdegrees" id="dailyMaxTem">
+                  22ºC
+                </p>
+                <p className="mindegrees" id="dailyMinTem">
+                  10ºC
+                </p>
+              </div>
+              <div className="col-sm">
+                <div className="nextnamedays">Monday</div>
+                <p className="maxdegrees" id="dailyMaxTem">
+                  22ºC
+                </p>
+                <p className="mindegrees" id="dailyMinTem">
+                  10ºC
+                </p>
+              </div>
+              <div className="col-sm">
+                <div className="nextnamedays">Monday</div>
+                <p className="maxdegrees" id="dailyMaxTem">
+                  22ºC
+                </p>
+                <p className="mindegrees" id="dailyMinTem">
+                  10ºC
+                </p>
+              </div>
+              <div className="col-sm">
+                <div className="nextnamedays">Monday</div>
+                <p className="maxdegrees" id="dailyMaxTem">
+                  22ºC
+                </p>
+                <p className="mindegrees" id="dailyMinTem">
+                  10ºC
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

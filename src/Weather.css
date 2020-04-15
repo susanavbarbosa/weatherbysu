@@ -23,6 +23,7 @@ ul,
   font-weight: bold;
   padding: 10px;
   font-size: 40px;
+  margin-bottom: 10px;
 }
 .weather-advice {
   font-style: italic;
@@ -35,6 +36,7 @@ ul,
   color: #596aca;
   font-weight: bold;
   padding: 10px;
+  margin-bottom: 10px;
 }
 hr {
   background: none;
@@ -43,7 +45,6 @@ hr {
   width: 100%;
   height: 1px;
   border: none;
-  margin: -1px 0;
 }
 li {
   list-style: none;
