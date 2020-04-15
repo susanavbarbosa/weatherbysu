@@ -10,3 +10,8 @@ div.card {
   padding: 10px 0px 100px 50px;
   margin: 20px 400px 20px 400px;
 }
+footer {
+  text-align: center;
+  font-family: "Karma", serif;
+  font-size: small;
+}
